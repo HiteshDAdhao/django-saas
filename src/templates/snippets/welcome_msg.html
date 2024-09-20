@@ -1,0 +1,9 @@
+{{request.user}}  {{request.method}} -> {{request.user.is_authenticated}}
+
+<div>
+    {% if request.user.is_authenticated %}
+    Hello Authenticated user
+    {% else %}
+    Hello Anonymous user
+    {% endif %}
+</div>

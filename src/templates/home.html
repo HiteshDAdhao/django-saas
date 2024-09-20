@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} Homepage - {{block.super}} {% endblock title%}
+
+{% block content %}
+    <p>{{ block.super }} replaced</p>
+    {% include 'snippets/welcome_msg.html' %}
+    <p>Page Count : {{ page_count }}</p>
+    <p>Page Percent : {{ page_percent }}</p>
+    <p>Total Page Count : {{ total_page_count }}</p>
+{% endblock content %}
